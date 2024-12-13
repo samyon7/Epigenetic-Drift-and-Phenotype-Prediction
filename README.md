@@ -18,8 +18,8 @@ This project involves research a population of genetically identical organisms (
 
 3. **Epigenetic Drift Model:**
    - Epigenetic changes are modeled probabilistically over time. Transition probabilities are defined as:
-     - `P(M_i(t+Δt) = 1 | M_i(t) = 0) = α*Δt + O(Δt^2)`
-     - `P(M_i(t+Δt) = 0 | M_i(t) = 1) = β*Δt + O(Δt^2)`
+     - $P(M_i(t+\Delta t) = 1 \mid M_i(t) = 0) = \alpha \cdot \Delta t + O(\Delta t^2)$
+     - $P(M_i(t+\Delta t) = 0 \mid M_i(t) = 1) = \beta \cdot \Delta t + O(\Delta t^2)$
    - Here, `α = f(site_index, environmental_variable)` and `β = g(site_index, environmental_variable)` are non-homogeneous functions dependent on CpG site and environmental variables.
 
 ### Custom Distance Metric
@@ -47,7 +47,7 @@ Simulate the methylation states over time using the epigenetic drift model. Impl
 
 - Input:
   - Initial methylation matrix `M`.
-  - Drift rates `α = f(site_index, environmental_variable)` and `β = g(site_index, environmental_variable)`.
+  - Drift rates $\alpha = f(site\_index, environmental\_variable)$ and $\beta = g(site\_index, environmental\_variable)$.
   - Time step `Δt` and total time `T`.
 
 ### 2. Phenotype Prediction Using Non-Parametric Approach
