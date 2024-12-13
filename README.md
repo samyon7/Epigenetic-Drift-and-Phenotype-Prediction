@@ -26,9 +26,9 @@ This project involves research a population of genetically identical organisms (
 
 To compute distances between individuals, we use a custom formula:
 
-\[
+$$
 d(x, y, e_x, e_y) = \sqrt{\sum_i (w_i \cdot |x_i - y_i|^p) + \gamma \cdot |e_x - e_y|}
-\]
+$$
 
 - `x`, `y`: Methylation state vectors of two individuals.
 - `e_x`, `e_y`: Respective environmental variable values.
